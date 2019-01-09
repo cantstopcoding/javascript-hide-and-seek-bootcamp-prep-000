@@ -3,17 +3,23 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  return document.querySelector('#nested .target')
+  return document.querySelector('div#nested div div div div');
+}
+
+function increaseRankBy(n) {
+  let lis = document.querySelectorAll('.ranked-list');
+  
+  for(let i = 0; i < lis.length; i++) {
+    lis[i].innerHTML = parseInt(lis[i].innerHTML) + n ;
+  } 
+}
+
+function deepestChild() {
+  
 }
 
 /*
-describe('nestedTarget()', () => {
-    it('pulls a .target out of #nested', () => {
-      expect(nestedTarget()).to.equal(document.querySelector('#nested .target'))
-    })
-  })
-
-  describe('deepestChild()', () => {
+describe('deepestChild()', () => {
     it('returns the most deeply nested child in #grand-node', () => {
       console.log(deepestChild().innerHTML)
       expect(deepestChild()).to.equal(document.querySelector('#grand-node div div div div'))
