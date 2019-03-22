@@ -16,10 +16,12 @@ function deepestChild() {
   }
   return node;
 }
- 
+
 function increaseRankBy(n) {
-   var lis = document.querySelectorAll('ul.ranked-list li');
-  for (var i = 0; i < lis.length; i++) {
-    lis[i].innerHTML = parseInt(lis[i].innerHTML) + n
+  let rankdedList = document.querySelectorAll('.ranked-list');
+  for(let i = 0; i < rankdedList.length; i++) {
+    rankdedList[i].innerHTML = parseInt(rankdedList[i].innerHTML) + n;
   }
 }
+
+
