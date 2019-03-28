@@ -12,14 +12,14 @@ function increaseRankBy(n) {
   for(let i = 0; i < rankedLists.length; i++) {
     let children = rankedLists[i].children;
     
-    for( let j = 0; j < children.length; j++) {
-      children[j].innerHTML = parseInt(children[j].innerHTML) + n;
+  for(let j = 0; j < children.length; j++) {
+    children[j].innerHTML = parseInt(children[j].innerHTML) + n;  
     }
   }
 }
 
 function deepestChild() {
-  let node =  document.getElementById('grand-node');
+  let node = document.getElementById('grand-node');
   let next = node.children[0];
   
   while(next) {
