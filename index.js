@@ -23,6 +23,9 @@ function increaseRankBy(n) {
   for(let i = 0; i < rankedList.length; i++) {
     let children = rankedList[i].children;
     
+    for(let j = 0; j < ) {
+      
+    }
   }
 }
 
