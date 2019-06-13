@@ -19,6 +19,6 @@ function deepestChild() {
 }
 
 function increaseRankBy(n) {
-  let rankedList = $('ran')
+  let rankedList = $('ranked-list')
 }
 
