@@ -19,6 +19,7 @@ function deepestChild() {
 }
 
 function increaseRankBy(n) {
-  let rankedList = $('.ranked-list')
+  let rankedList = $('.ranked-list');
+  for(let i = )
 }
 
