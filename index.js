@@ -19,6 +19,6 @@ function deepestChild() {
 }
 
 function increaseRankBy(n) {
-  let rankedList
+  let rankedList = document.
 }
 
